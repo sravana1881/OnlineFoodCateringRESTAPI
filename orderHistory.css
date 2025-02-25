@@ -1,0 +1,143 @@
+/* Global styling */
+:root {
+    --base-color: #ffd6af; /* Light beige */
+    --secondary-color: #c49e85; /* Brownish */
+    --action-color: #6b4b3e; /* Darker brown */
+    --layover-color: #f8f4f9; /* Very light purple-beige */
+    --header-color: #9e6f47; /* A distinct color for header elements */
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--base-color);
+    color: var(--action-color);
+}
+
+/* Header and Navbar */
+.container {
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+}
+
+.banner {
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.banner img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.navbar .nav-links {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: var(--action-color);
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: var(--base-color);
+}
+
+/* Main content */
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--header-color);
+    margin-top: 30px;
+}
+
+/* Table styling */
+#orderHistory {
+    margin: 20px auto;
+    width: 80%;
+    background-color: var(--layover-color);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px, 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--action-color);
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+td {
+    vertical-align: middle;
+}
+
+tr:hover {
+    background-color: var(--layover-color);
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--action-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+

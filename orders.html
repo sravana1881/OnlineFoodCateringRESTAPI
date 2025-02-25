@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="/styles/orders.css"> <!-- Link to external CSS for Order Summary -->
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="banner">
+                <h1>Welcome To Amma's Kitchen</h1>
+                <p>Your Order Summary</p>
+            </div>   
+        </div>
+      <nav class="navbar">
+        <div class="logo">
+            <img src="/Images/OFCS Logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="menu.html">Menu</a>
+            <a href="home.html">Home</a>   
+        </div>
+      </nav>
+    </header>
+
+    <div class="order-summary">
+        <h2>Your Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th> <!--added for delete button -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be inserted here dynamically -->
+                
+            </tbody>
+        </table>
+     </div>
+
+      <div class="total">
+        <h3>Total: <span id="total-price">$0.00</span></h3>
+      </div>
+
+     <div class="proceed-button">
+        <button id="proceed-to-payment">Proceed to Payment</button>
+     </div>
+<br>
+     <div class="order-history">
+        <button id="view-order-history">View Order History</button>
+     </div>
+
+     <script src="/Javascript/orders.js"></script> <!-- Link to the JS file that handles the cart -->
+    </body>
+</html>

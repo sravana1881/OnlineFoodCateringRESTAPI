@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - OFCS Website</title>
+    <link rel="stylesheet" href="/styles/register.css">
+    <style>
+        .error-message {
+          color: #f0ad4e;
+          font-size: 12px;
+          margin-top: -15px;
+          margin-bottom: 10px;
+          display: none;
+        }
+      </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Banner with Logo and Text -->
+        <div class="banner">
+            <img src="/Images/OFCS Logo.png" alt="Logo">
+            <h1>Register</h1>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="registerForm">
+            <!-- onsubmit="return validateRegister()"-->
+
+            <div class="input-group">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="error-message" id="nameError">
+                Please enter a valid user Name.
+            </div>
+
+            <div class="input-group">
+                <label for="useremail">Email</label>
+                <input type="email" id="useremail" name="useremail" placeholder="Email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Enter a valid email">
+            </div>
+            <div class="error-message" id="emailError">
+                Please enter a valid email address.
+            </div>
+    
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="password"
+                required
+                pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}"
+                title="Password must be 8-20 characters long, include at least one letter and one number">
+            </div>
+            <div class="error-message" id="passwordError">
+                Password must be at least 8 characters long and contain at least one
+                uppercase letter, one lowercase letter, and one digit.
+            </div>
+
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phno" name="phoneNumber" required>
+            </div>
+            <div class="error-message" id="phoneError">
+                Please enter a valid phone number.
+            </div>
+              
+            <button id="register" type="submit">Register</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <script src="/Javascript/register.js"></script>
+    
+</body>
+</html>

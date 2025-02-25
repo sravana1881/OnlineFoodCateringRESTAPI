@@ -1,0 +1,142 @@
+/* Global styling */
+:root {
+    --base-color: #ffd6af; /* Light beige */
+    --secondary-color: #c49e85; /* Brownish */
+    --action-color: #6b4b3e; /* Darker brown */
+    --layover-color: #f8f4f9; /* Very light purple-beige */
+    --header-color: #9e6f47; /* A distinct color for header elements */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--base-color);
+}
+
+/* Header and Navbar */
+.container {
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+}
+
+.banner {
+    background-color: var(--secondary-color); 
+    padding: 5px;
+    text-align: center;
+    border-radius: 0px;
+    margin: 0 auto; /* Center the banner horizontally */
+}
+
+.banner img {
+    max-width: 100px;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    max-width: 50%;
+    margin-right: 50%;
+}
+
+.navbar .logo span {
+    font-size: 1.5rem;
+    color: var(--action-color);
+}
+
+.navbar .nav-links {
+    margin-left: auto; /* Align links to the right */
+    text-align: right; 
+    display: flex; 
+    gap: 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: var(--action-color);
+    font-size: 1rem;
+
+}
+
+.navbar .nav-links a:hover {
+    color: var(--base-color);
+}
+
+
+/* Cart Section */
+.cart-container {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    display: grid;
+    gap: 25px; /* Increased space between items */
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 2fr auto;
+    padding: 10px;
+    background-color: var(--base-color);
+    border-radius: 5px;
+}
+
+.item-name {
+    font-size: 1.1em;
+    color: var(--action-color);
+}
+
+.item-price {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    text-align: right;
+}
+
+.quantity-box {
+    width: 40px; /* Reduced the quantity box size */
+    height: 30px; /* Adjusted height for better proportion */
+    text-align: center;
+}
+
+.proceed-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--action-color);
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.proceed-btn:hover {
+    background-color: var(--secondary-color);
+}

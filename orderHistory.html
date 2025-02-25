@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History</title>
+    <link rel="stylesheet" href="/styles/orderHistory.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="banner">
+                <h1>Welcome To Amma's Kitchen</h1>
+                <p>Your order-summary</p>
+            </div>   
+        </div>
+      <nav class="navbar">
+        <div class="logo">
+            <img src="/Images/OFCS Logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="menu.html">Menu</a>
+            <a href="home.html">Home</a>  
+            <a href="orders.html">Orders</a>  
+        </div>
+      </nav>
+    </header>
+
+    <h1>Order History</h1>
+    <div id="orderHistory">
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Date Ordered</th>
+                    <th>Total Amount</th>
+                    <th>Status</th>
+                    <th>Card Name</th>
+                    <th>Item Name</th> 
+                    <th>Item Price</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Order data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <button id="backToOrdersBtn">Back to Orders</button>
+    
+    <script src="/Javascript/orderHistory.js"></script>
+</body>
+</html>

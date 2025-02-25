@@ -1,0 +1,75 @@
+:root {
+    --base-color: #ffd6af;
+    --secondary-color: #c49e85;
+    --action-color: #6b4b3e;
+    --layover-color: #f8f4f9;
+}
+
+/* Basic Reset */
+/* General styles can be in styles.css, but this is for register-specific styling */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: var(--layover-color);
+    background-image: url('/Images/background.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 12px;
+    background-color: #ffd6af;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f29f7f;
+}
+
+a {
+    color: #6b4b3e;
+}

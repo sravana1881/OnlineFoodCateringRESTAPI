@@ -1,0 +1,96 @@
+:root {
+    --base-color: #ffd6af;
+    --secondary-color: #c49e85;
+    --action-color: #6b4b3e;
+    --layover-color: #f8f4f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/Images/homebackground.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: var(--action-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    margin-top: 0px;
+    z-index: 2; /* Ensure text and button appear above background */
+    position: relative;
+}
+
+.banner {
+    background-color: rgba(255, 214, 175, 0.8); /* Slightly transparent to allow the background image to show through */
+    padding: 20px;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.banner img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    max-width: 50px;
+    margin-right: 50px;
+}
+
+.navbar .logo span {
+    font-size: 1.5rem;
+    color: var(--action-color);
+}
+
+.navbar .nav-links {
+    text-align: right;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: var(--action-color);
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+.navbar .nav-links a:hover {
+    color: var(--base-color);
+}
+
+button {
+    background-color: var(--action-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    z-index: 2; /* Ensure button is above background */
+    position: relative;
+}
+
+button:hover {
+    background-color: var(--base-color);
+}

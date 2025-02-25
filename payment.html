@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/styles/payment.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="banner">
+                <h1>Welcome To Amma's Kitchen</h1>
+                <p>Your Payment Details</p>
+            </div>   
+        </div>
+      <nav class="navbar">
+        <div class="logo">
+            <img src="/Images/OFCS Logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="menu.html">Menu</a>
+            <a href="home.html">Home</a>  
+            <a href="orders.html">Orders</a>  
+        </div>
+      </nav>
+    </header>
+
+
+    <h1>Payment</h1>
+    
+    <p>Order Total: <span id="orderTotal"></span></p>
+
+    <form id="paymentForm">
+        <label for="nameOnCard">Name on Card:</label>
+        <input type="text" id="nameOnCard" required><br>
+
+        <label for="cardNumber">Credit Card Number:</label>
+        <input type="text" id="cardNumber" required><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" required><br>
+
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="month" id="expiryDate" required><br>
+
+        <label for="zipCode">ZIP Code:</label>
+        <input type="text" id="zipCode" required><br>
+
+        <button type="button" id="confirmOrderBtn">Confirm Order</button>
+        <button type="button" id="cancelOrderBtn">Cancel Order</button>
+    </form>
+
+    <div id="statusMessage"></div>
+
+    <script src="/Javascript/payment.js"></script>
+</body>
+</html>

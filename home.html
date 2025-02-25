@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home OFCS Website</title>
+    <link rel="stylesheet" href="/styles/home.css">
+    <style>
+        /* Add style for the About content */
+        #about-content {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="banner">
+                <h1>Welcome To Amma's Kitchen</h1>
+                <p>You have successfully logged in.</p>
+            </div>   
+        </div>
+     <nav class="navbar">
+        <div class="logo">
+            <img src="/Images/OFCS Logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <button onclick="window.location.href='login.html'">Log Out</button>
+            <a href="javascript:void(0);" onclick="toggleAbout()">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="payment.html">Payment</a>
+            <a href="orders.html">Orders</a>
+            <a href="orderHistory.html">Order History</a>
+        </div>
+     </nav>
+    </header>
+
+    <!-- About content section -->
+    <div id="about-content">
+        <h2>About Us</h2>
+        <br>
+        <p>
+        <ul>Welcome to Amma’s Kitchen, your go-to destination for authentic, homemade-style vegetarian Indian cuisine.
+            At our restaurant, we believe in serving food that feels like a warm, comforting meal straight from the heart of an Indian home.
+            Every dish is crafted with love, using the freshest ingredients, aromatic spices, and the finest vegetables that India has to offer.</ul><br>
+           <ul> Our menu is a tribute to the rich variety of flavors found in Indian vegetarian cuisine.
+             We’ve perfected the art of creating meals that are not only delicious but wholesome and nutritious. 
+             From the first bite to the last, our dishes will transport you to the heart of India,
+              where every meal is made with care and tradition.</ul><br>
+            <ul>At Amma’s Kitchen, we’re proud to offer a purely vegetarian experience, where every dish is as nourishing as it is flavorful. 
+                Whether you're craving a comforting home-cooked meal or exploring new tastes,
+                 we promise a dining experience that feels just like home.</ul></p>
+            
+    </div>
+
+    <!-- Linked to the JavaScript file -->
+    <script src="/Javascript/about.js"></script>
+    <script src="/Javascript/menu.js"></script>
+
+</body>
+</html>

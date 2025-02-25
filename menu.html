@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/styles/menu.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Images/OFCS Logo.png" alt="Logo">
+            <h1>Welcome To Amma's Kitchen</h1>
+            <h1>Our Menu</h1>
+        </div>
+        <div class="nav">
+            <a href="/Index/home.html">Home</a> <!-- Link to the Home Page -->
+        </div>
+    </header>
+
+    <div class="intro">
+        <h2>Discover the Flavor of India at Amma's Kitchen</h2>
+        <p>At Amma's Kitchen, we take pride in offering a rich, diverse menu filled with mouthwatering vegetarian options to satisfy every palate. From our savory appetizers to our hearty main dishes, there's something for everyone.</p>
+        <p>Each dish is crafted with traditional recipes, delivering an authentic and unforgettable dining experience. Whether you're a longtime fan of Indian cuisine or trying it for the first time, we invite you to join us at Amma's Kitchen and savor the true taste of India.</p>
+    </div>
+
+    <div class="category-dropdown">
+        <label for="menu-category">Select a Category:</label>
+        <select id="menu-category" onchange="navigateToCategory()">
+            <option value="">-- Choose a Category --</option>
+            <option value="appetizers">Appetizers</option>
+            <option value="biryanis">Biryanis</option>
+            <option value="soups">Soups</option>
+            <option value="curries">Curries</option>
+            <option value="naans">Naans</option>
+            <option value="desserts">Desserts</option>
+            <option value="drinks">Drinks</option>
+            <option value="specials">Specials</option>
+        </select>
+    </div>
+
+    <!-- Appetizers Section -->
+    <div  id="appetizers" class="menu-category">
+        <h2>Appetizers</h2>
+        <div class="menu-container">
+            <!-- Menu Item 1 -->
+            <div class="menu-item">
+                <img src="/Images/BabyCornManchuria.webp" alt="Baby Corn Manchuria" class="menu-image">
+                <h3>Baby Corn Manchuria</h3>
+                <p>$11.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Menu Item 2 -->
+            <div class="menu-item">
+                <img src="/Images/Gobi-Manchuria.jpg" alt="Gobi Manchuria" class="menu-image">
+                <h3>Gobi Manchuria</h3>
+                <p>$7.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Menu Item 3 -->
+            <div class="menu-item">
+                <img src="/Images/Corn Kebab.jpg" alt="Corn kebab" class="menu-image">
+                <h3>Corn Kebab</h3>
+                <p>$7.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Menu Section -->
+    <div id="biryanis" class="menu-category">
+        <h2>Biryanis</h2>
+        <div class="menu-container">
+            <!-- Menu Item 4 -->
+            <div class="menu-item">
+                <img src="/Images/Hyderbadi Veg Dum Biryani.jpg" alt="Hyderbadi Veg Dum Biryani" class="menu-image">
+                <h3>Hyderbadi Veg Dum Biryani</h3>
+                <p>$12.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Menu Item 5 -->
+            <div class="menu-item">
+                <img src="/Images/Paneer Biryani.jpg" alt="Paneer Biryani" class="menu-image">
+                <h3>Paneer Biryani</h3>
+                <p>$15.49</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Menu Item 6 -->
+            <div class="menu-item">
+               <img src="/Images/Veg Pulao.jpg" alt="Veg Pulao" class="menu-image">
+               <h3>Veg Pulao</h3>
+               <p>$11.49</p>
+               <input type="number" value="1" class="quantity" min="1">
+               <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Soups Section -->
+    <div id="soups" class="menu-category">
+        <h2>Soups</h2>
+        <div class="menu-container">
+            <!-- Menu Item 5 -->
+            <div class="menu-item">
+                <img src="/Images/Sweet Corn Soup.jpg" alt="Sweet Corn Soup" class="menu-image">
+                <h3>Sweet Corn Soup</h3>
+                <p>$5.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Menu Item 6 -->
+            <div class="menu-item">
+                <img src="/Images/Veg Hot and Sour Soup.jpg" alt="Veg Hot and Sour Soup" class="menu-image">
+                <h3>Veg Hot and Sour Soup</h3>
+                <p>$6.49</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Curries Section -->
+    <div id="curries" class="menu-category">
+        <h2>Curries</h2>
+        <div class="menu-container">
+            <!-- Menu Item 7 -->
+            <div class="menu-item">
+                <img src="/Images/Paneer Butter Masala.jpg" alt="Paneer Butter Masala" class="menu-image">
+                <h3>Paneer Butter Masala</h3>
+                <p>$13.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Menu Item 8 -->
+            <div class="menu-item">
+                <img src="/Images/Dal Makhani.jpg" alt="Dal Makhani" class="menu-image">
+                <h3>Dal Makhani</h3>
+                <p>$12.49</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Naans Section -->
+    <div id="naans" class="menu-category">
+        <h2>Naans</h2>
+        <div class="menu-container">
+            <!-- Menu Item 7 -->
+            <div class="menu-item">
+                <img src="/Images/Garlic Naan.webp" alt="Garlic Naan" class="menu-image">
+                <h3>Garlic Naan</h3>
+                <p>$4.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Menu Item 8 -->
+            <div class="menu-item">
+                <img src="/Images/Aloo Paneer Paratha.webp" alt="Aloo Paneer Paratha" class="menu-image">
+                <h3>Aloo Paneer Paratha</h3>
+                <p>$5.49</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+<!-- Desserts Section -->
+<div id="desserts" class="menu-category">
+        <h2>Desserts</h2>
+        <div class="menu-container">
+            <!-- Menu Item 7 -->
+            <div class="menu-item">
+                <img src="/Images/Carrot Halwa.jpg" alt="Carrot Halwa" class="menu-image">
+                <h3>Carrot Halwa </h3>
+                <p>$4.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Menu Item 8 -->
+            <div class="menu-item">
+                <img src="/Images/Gulab Jamun.jpg" alt="Gulab Jamun" class="menu-image">
+                <h3>Gulab Jamun</h3>
+                <p>$5.49</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drinks Section -->
+    <div id="drinks" class="menu-category">
+        <h2>Drinks</h2>
+        <div class="menu-container">
+            <!-- Menu Item 9 -->
+            <div class="menu-item">
+                <img src="/Images/Mango Lassi.jpg" alt="Mango Lassi" class="menu-image">
+                <h3>Mango Lassi</h3>
+                <p>$3.49</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Menu Item 10 -->
+            <div class="menu-item">
+                <img src="/Images/Butter Milk.jpg" alt="Butter Milk" class="menu-image">
+                <h3>Butter Milk</h3>
+                <p>$2.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+<!-- Specials Section -->
+<div id="specials" class="menu-category">
+        <h2>Specials</h2>
+        <div class="menu-container">
+            <!-- Menu Item 11 -->
+            <div class="menu-item">
+                <img src="/Images/South Indian Veg Thali.jpg" alt="South Indian Veg Thali" class="menu-image">
+                <h3>South Indian Veg Thali</h3>
+                <p>$18.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Menu Item 12 -->
+            <div class="menu-item">
+                <img src="/Images/Veg SuperFoods.jpg" alt="Veg Super Foods" class="menu-image">
+                <h3>Veg Super Foods</h3>
+                <p>$17.99</p>
+                <input type="number" value="1" class="quantity" min="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Javascript/menu.js"></script> <!-- Link to external JS -->
+</body>
+</html>
